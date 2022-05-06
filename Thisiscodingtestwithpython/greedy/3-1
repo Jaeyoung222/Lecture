@@ -5,7 +5,7 @@ count = 0
 money_type = [500,100,50,10]
 
 for i in money_type :
-  count += N//i
-  N %= i
+  count += N//i # 현재 화폐로 거슬러 줄 수 있는 동전의 개수 세기
+  N %= i 
 
 print(count)
