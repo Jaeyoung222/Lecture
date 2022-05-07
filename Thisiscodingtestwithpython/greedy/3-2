@@ -1,0 +1,7 @@
+#큰 수의 법칙, 6min
+
+m, n, k = map(int, input().split())
+num_list = list(map(int, input().split()))
+num_list.sort()
+
+print((num_list[m-1]*k*(n//(k+1)))+(num_list[m-2]*(n//(k+1)))+(num_list[m-1]*(n%(k+1)))) #반복되는 수열과 횟수 분석
