@@ -1,0 +1,41 @@
+# 왕실의 나이트
+coor = input()
+x = 0
+y = int(coor[1])
+if coor[0] == 'a' :
+    x = 1
+elif coor[0] == 'b' :
+    x = 2
+elif coor[0] == 'c' :
+    x = 3
+elif coor[0] == 'd' :
+    x = 4
+elif coor[0] == 'e' :
+    x = 5
+elif coor[0] == 'f' :
+    x = 6
+elif coor[0] == 'g' :
+    x = 7
+elif coor[0] == 'h' :
+    x = 8
+
+cnt = 0
+
+if x -2 > 0 and x -2 < 9 and y-1 > 0 and y-1 < 9 :
+    cnt += 1
+if x -2 > 0 and x -2 < 9 and y+1 > 0 and y+1 < 9 :
+    cnt += 1
+if x +2 > 0 and x +2 < 9 and y-1 > 0 and y-1 < 9 :
+    cnt += 1
+if x +2 > 0 and x +2 < 9 and y+1 > 0 and y+1 < 9 :
+    cnt += 1
+if x -1 > 0 and x -1 < 9 and y-2 > 0 and y-2 < 9 :
+    cnt += 1
+if x -1 > 0 and x -1 < 9 and y+2 > 0 and y+2 < 9 :
+    cnt += 1
+if x +1 > 0 and x +1 < 9 and y-2 > 0 and y-2 < 9 :
+    cnt += 1
+if x +1 > 0 and x +1 < 9 and y+2 > 0 and y+2 < 9 :
+    cnt += 1
+
+print(cnt)
