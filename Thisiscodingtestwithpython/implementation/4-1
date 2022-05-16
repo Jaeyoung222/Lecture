@@ -1,0 +1,19 @@
+# 상하좌우
+
+n = int(input())
+a,b = 1, 1
+l=input().split()
+for i in range(len(l)) :
+    if l[i] == 'L' :
+        if a > 1 :
+            a -= 1
+    elif l[i] == 'R' :
+        if a < n :
+            a += 1
+    elif l[i] == 'U' :
+        if b > 1 :
+            b -= 1
+    elif l[i] == 'D' :
+        if b < n :
+            b += 1
+print(b,a)
